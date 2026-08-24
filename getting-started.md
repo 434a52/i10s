@@ -17,7 +17,7 @@ llm/
 
 ```yaml
 # i10s source + a PINNED ref (tag/commit — never a branch) + which docs to pull.
-source: github.com/cjr--/i10s
+source: github.com/434a52/i10s
 ref:    v0.1.0          # pin me to a real tag
 docs:                  # ordered globs; later = higher (soft) precedence; local/ overrides synced/
   - docs/*.md

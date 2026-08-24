@@ -1,0 +1,32 @@
+# CLAUDE.md — i10s
+
+**i10s** — LLM instruction docs (numeronym for *instructions*), in two kinds: **human-facing methodology** (read by people) and **llm-context payloads** (consumed by the model). Includes the distribution mechanism — a consuming repo names files in `llm.conf`, a git event syncs them into the vendor dirs it detects.
+
+**Open source, licensed, public.** Higher exposure than any sibling repo: the content *is* the product, and it is read by strangers by design.
+
+## This repo is public-bound — keep it clean
+
+Everything here is written to be read by strangers. **Design docs and change logs describe the engineering, not the circumstances around it.**
+
+Never write into this repo:
+
+- **Personal or colleague names**, or anything identifying an individual.
+- **Employer, client or project references** from paid work — including implicit ones (what a client's sector is, when a contract ends, who a manager is).
+- **Career, hiring or commercial framing** — why a project helps a job search, who it's meant to impress, IP or contract reasoning.
+- **First-person notes about the author** or their background.
+- **Strategy, sequencing or roadmap material.** This repo records *what* and *why technically* — never *why now*.
+
+**Change logs are the highest-risk surface.** They're written in the moment, when private-repo assumptions still hold, and never re-read. Apply the same rule to them as to the prose above them.
+
+If a rationale is genuinely about circumstance rather than engineering, the entry here should simply omit it — not gesture at it.
+
+## Attribution
+
+Credit Claude as co-contributor on all git activity:
+- End commit messages with: `Co-Authored-By: Claude <noreply@anthropic.com>` (generic — not model-specific).
+- Note Claude Code involvement in PR bodies.
+
+## Conventions
+
+- UK English. Terse, load-bearing docs; change logs newest-first.
+- Docs are written clean-room — general practice, never traceable to a specific workplace, team or codebase.
