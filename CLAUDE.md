@@ -29,4 +29,4 @@ Credit Claude as co-contributor on all git activity:
 ## Conventions
 
 - UK English. Terse, load-bearing docs; change logs newest-first.
-- Docs are written clean-room — general practice, never traceable to a specific workplace, team or codebase.
+- Docs describe general practice — never a specific workplace, team or codebase.
