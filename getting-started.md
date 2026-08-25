@@ -10,7 +10,9 @@ i10s distributes a small corpus of LLM instruction docs into your repo, safely: 
 llm/
 ├── synced/     # pinned docs vendored from i10s (managed — edit the SOURCE, not here)
 ├── local/      # your own instruction docs (yours — freely edited)
-└── index.md    # generated — lists synced + local; the single reference
+├── index.md    # generated — lists synced + local; the single reference
+├── sync.md     # the vendored sync instruction (step 3)
+└── README.md   # what this dir is, and where to edit a rule (step 3b)
 ```
 
 ## 2. Create `llm.conf` at the repo root
@@ -26,6 +28,10 @@ docs:                  # ordered globs; later = higher (soft) precedence; local/
 ## 3. Vendor the sync instruction
 
 Copy `sync.md` from the i10s repo (at your pinned ref) into `llm/sync.md`, so future updates run *your own reviewed* instruction — never live remote code.
+
+## 3b. Add `llm/README.md`
+
+A short orientation file so nobody edits the mirror by mistake: state that `synced/` is overwritten by the next sync, that `local/` is theirs, that the version lives in `llm.conf`, and link the i10s README's doc router for *where a new shared rule belongs*. The synced files themselves carry no such banner — they are byte-identical copies, and that fidelity is the point — so this file is the only place the warning can live.
 
 ## 4. Run the first sync
 
